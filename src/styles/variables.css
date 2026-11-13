@@ -1,0 +1,51 @@
+:root {
+  /* Brand Palette matching logo background #E5E5E5 and text #62615A */
+  --color-header-bg: #BABBFF;
+  --color-brand-ink: #62615A;
+  --color-brand-ink-dark: #3E3D38;
+  --color-charcoal: #1A1A18;
+  --color-obsidian: #111110;
+  --color-accent: #d17be2;
+  --color-accent-hover: #9C773B;
+  --color-accent-soft:#d17be2;
+
+  /* Surfaces & Text */
+  --color-bg-page: #F6F5F2;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-muted: #ECEBE6;
+  --color-text-primary: #1F1F1C;
+  --color-text-secondary: #62615A;
+  --color-text-light: #F6F5F2;
+  --color-border: #DAD8D0;
+  --color-border-strong: #C4C2B8;
+
+  /* Semantic Status Colors */
+  --color-success: #1F7A4D;
+  --color-success-bg: #E7F5EE;
+  --color-warning: #A66A14;
+  --color-warning-bg: #FDF3E2;
+  --color-danger: #B83333;
+  --color-danger-bg: #FDECEC;
+  --color-info: #285E8C;
+  --color-info-bg: #EBF3FA;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+
+  /* Layout & Radius */
+  --container-max: 1240px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 2px 8px rgba(17, 17, 16, 0.06);
+  --shadow-md: 0 10px 30px rgba(17, 17, 16, 0.1);
+  --shadow-lg: 0 20px 50px rgba(17, 17, 16, 0.18);
+
+  /* Transitions */
+  --transition-fast: 180ms ease;
+  --transition-smooth: 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}

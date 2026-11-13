@@ -1,0 +1,122 @@
+.logo-carousel-section {
+ 
+  padding: 2.25rem 0 2.5rem;
+}
+
+/* Matches the centered ~55% screenshot span rather than the 90% page container */
+.logo-carousel-shell {
+  width: min(760px, 56%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo-carousel-caption {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.35rem;
+}
+
+.logo-marquee-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000000 10%,
+    #000000 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000000 10%,
+    #000000 90%,
+    transparent 100%
+  );
+}
+
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: logoMarqueeLeftToRight 26s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee-viewport:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+
+.logo-marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.logo-marquee-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 36px;
+}
+
+.logo-marquee-img {
+  height: 32px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  opacity: 0.88;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.logo-marquee-item:hover .logo-marquee-img {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+@keyframes logoMarqueeLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo-carousel-shell {
+    width: 78%;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo-carousel-section {
+    padding: 1.85rem 0 2rem;
+  }
+
+  .logo-carousel-shell {
+    width: 92%;
+  }
+
+  .logo-marquee-group {
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+
+  .logo-marquee-img {
+    height: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-track {
+    animation-duration: 60s;
+  }
+}
