@@ -1,5 +1,5 @@
 .contact-details-section {
-  background-color: var(--color-bg-page);
+  background-color: #17191D; /* Main Background: Deep Charcoal */
   padding: 0.75rem 0 4.25rem;
 }
 
@@ -13,14 +13,14 @@
   font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.4;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin: 0 0 0.4rem;
 }
 
 .contact-details-hours-text {
   font-size: 0.88rem;
   line-height: 1.5;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   margin: 0;
 }
 
@@ -31,15 +31,22 @@
 }
 
 .contact-details-card {
-  background-color: transparent;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.35rem;
   min-height: 82px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.contact-details-card:hover {
+  border-color: #F56A32;
+  transform: translateY(-2px);
 }
 
 .contact-details-card-title {
@@ -47,25 +54,26 @@
   font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.35;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin: 0;
 }
 
 .contact-details-card-value {
   font-size: 0.84rem;
   line-height: 1.45;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   margin: 0;
   word-break: break-word;
 }
 
 .contact-details-link {
   text-decoration: none;
+  color: #C4C7CC;
   transition: color var(--transition-fast);
 }
 
 .contact-details-link:hover {
-  color: var(--color-charcoal);
+  color: #F56A32;
   text-decoration: underline;
   text-underline-offset: 3px;
 }

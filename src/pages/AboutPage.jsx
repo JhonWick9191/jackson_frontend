@@ -627,7 +627,7 @@ export default function AboutPage() {
             <Link to="/contact" className="btn btn-primary about-cta-btn-main">
               Start Your Project <ArrowRight size={16} aria-hidden="true" />
             </Link>
-            <Link to="/services" className="btn btn-secondary about-cta-btn-sub">
+            <Link to="/services/signage-solutions" className="btn btn-secondary about-cta-btn-sub">
               Explore Services
             </Link>
           </div>

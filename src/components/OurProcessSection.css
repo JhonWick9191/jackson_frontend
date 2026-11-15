@@ -1,5 +1,7 @@
 .process-section {
-  background-color: var(--color-bg-page);
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
+  border-bottom: 1px solid #3A3D44;
+  padding: 5rem 0;
 }
 
 .process-header-centered {
@@ -14,20 +16,20 @@
   gap: 0.45rem;
   padding: 0.3rem 0.9rem;
   border-radius: var(--radius-pill);
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #30343B;
+  border: 1px solid #3A3D44;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-brand-ink-dark);
+  color: #FFFFFF;
   margin-bottom: 1rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .process-pill-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--color-accent);
+  background-color: #F56A32; /* Electric Orange */
 }
 
 .process-heading {
@@ -36,7 +38,7 @@
   line-height: 1.08;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .process-timeline {
@@ -56,7 +58,7 @@
   transform: translateX(-50%);
   width: 5px;
   border-radius: var(--radius-pill);
-  background-color: var(--color-header-bg);
+  background-color: #3A3D44;
   z-index: 1;
 }
 
@@ -93,8 +95,8 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  box-shadow: 0 0 0 3px var(--color-bg-page);
+  background-color: #F56A32;
+  box-shadow: 0 0 0 4px #22252B;
 }
 
 .process-circle {
@@ -108,16 +110,21 @@
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   flex-shrink: 0;
+  border: 2px solid #3A3D44;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .process-circle--periwinkle {
-  background-color: var(--color-header-bg);
+  background-color: #272A30;
+  color: #FFFFFF;
 }
 
 .process-circle--lavender {
-  background-color: var(--color-accent);
+  background-color: #30343B;
+  color: #F56A32;
+  border-color: #F56A32;
 }
 
 .process-text-box {
@@ -138,14 +145,14 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 0.55rem;
 }
 
 .process-text-box p {
   font-size: 0.9rem;
   line-height: 1.55;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 @media (max-width: 720px) {

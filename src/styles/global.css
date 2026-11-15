@@ -79,14 +79,14 @@ p {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent-hover);
+  color: var(--color-accent);
   margin-bottom: 0.65rem;
 }
 
 .section-title {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: var(--color-text-primary);
   margin-bottom: 0.85rem;
 }
 
@@ -95,7 +95,7 @@ p {
   color: var(--color-text-secondary);
 }
 
-/* Shared Buttons */
+/* Shared Buttons - Dark Theme & Electric Orange */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -118,48 +118,69 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--color-charcoal);
-  color: var(--color-text-light);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--color-brand-ink-dark);
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #FFFFFF;
   transform: translateY(-1px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 6px 18px rgba(245, 106, 50, 0.35);
 }
 
 .btn-accent {
   background-color: var(--color-accent);
-  color: #ffffff;
+  border-color: var(--color-accent);
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .btn-accent:hover:not(:disabled) {
   background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
   transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(245, 106, 50, 0.35);
 }
 
 .btn-outline {
   background-color: transparent;
-  border-color: var(--color-brand-ink);
-  color: var(--color-brand-ink-dark);
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
 }
 
 .btn-outline:hover:not(:disabled) {
-  background-color: var(--color-charcoal);
-  border-color: var(--color-charcoal);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-secondary {
+  background-color: #272A30;
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #30343B;
+  border-color: var(--color-accent);
+  color: #FFFFFF;
 }
 
 .btn-ghost-light {
-  background-color: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.55);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
   backdrop-filter: blur(6px);
 }
 
 .btn-ghost-light:hover:not(:disabled) {
-  background-color: rgba(255, 255, 255, 0.25);
-  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .btn-sm {
@@ -191,20 +212,20 @@ p {
 }
 
 .page-hero-band {
-  background-color: var(--color-charcoal);
-  color: var(--color-text-light);
+  background-color: #17191D;
+  color: #FFFFFF;
   padding: 4rem 0 3.5rem;
-  border-bottom: 3px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .page-hero-band h1 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 2.9rem);
   margin-bottom: 0.85rem;
 }
 
 .page-hero-band p {
-  color: #d6d4cc;
+  color: var(--color-text-secondary);
   max-width: 680px;
   font-size: 1.05rem;
 }

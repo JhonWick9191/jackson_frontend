@@ -11,13 +11,13 @@ const SOCIAL_LINKS = [
 const FOOTER_NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
-  { label: 'Services', to: '/services' },
+  { label: 'Services', to: '/services/signage-solutions' },
   { label: 'Our Work', to: '/our-work' },
   { label: 'Contact', to: '/contact' }
 ];
 
 const FOOTER_UTILITY_LINKS = [
-  { label: 'AV Services', to: '/services' },
+  { label: 'Signage Solutions', to: '/services/signage-solutions' },
   { label: 'Request Quote', to: '/contact' },
   { label: 'Admin Portal', to: '/admin' }
 ];

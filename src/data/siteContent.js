@@ -10,86 +10,7 @@ export const COMPANY_INFO = {
   hours: 'Mon – Sat: 9:00 AM – 8:00 PM IST (24/7 Project & Site Support)'
 };
 
-export const SERVICES_LIST = [
-  {
-    id: 'signage-solutions',
-    slug: 'signage-solutions',
-    title: 'Signage Solutions',
-    shortDesc: 'Custom architectural 3D channel letters, illuminated ACP pylons, neon signs, and commercial wayfinding systems.',
-    fullDesc:
-      'Elevate your brand presence with precision-engineered architectural signage. From illuminated 3D LED channel letters and acrylic fascias to heavy-duty ACP pylons, digital directory kiosks, and custom neon installations, we fabricate weatherproof, high-visibility signage solutions built for corporate offices, retail spaces, and commercial landmarks.',
-    highlights: ['3D LED Channel Letters', 'Architectural ACP Pylons', 'Custom Neon & Directional Wayfinding'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1572945550749-8859f39d6b2d?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    id: 'led-screen-supply-installation',
-    slug: 'led-screen-supply-installation',
-    title: 'LED Screen Supply & Installation',
-    shortDesc: 'Seamless indoor fine-pitch video walls, high-brightness outdoor displays, curved backdrops, and NovaStar 4K rigs.',
-    fullDesc:
-      'Turnkey supply, structural rigging, and calibration of high-definition LED displays. We deliver seamless indoor P1.8 and P2.5 fine-pitch video walls, rugged weatherproof outdoor P3.9 screens, curved stage backdrops, and perimeter banners powered by industry-leading NovaStar 4K processors for crystal-clear clarity across conferences, showrooms, and concerts.',
-    highlights: ['Fine-Pitch P1.8/P2.5 Indoor Walls', 'Weatherproof High-Brightness Outdoor LED', 'NovaStar 4K Processing & Structural Rigging'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    id: 'kiosk-design-installation',
-    slug: 'kiosk-design-installation',
-    title: 'Kiosk Design & Installation',
-    shortDesc: 'Bespoke interactive touchscreen kiosks, self-service information totems, and experiential digital retail enclosures.',
-    fullDesc:
-      'Engage visitors with tailor-made interactive digital kiosks designed for intuitive self-service, wayfinding, product showcases, and visitor registration. We handle industrial sheet-metal fabrication, responsive commercial capacitive touchscreens, integrated thermal printers, secure cable concealment, and reliable remote hardware management.',
-    highlights: ['Interactive Capacitive Touchscreens', 'Custom Metal & Glass Enclosures', 'Wayfinding & Self-Service Integration'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    id: 'exhibition-stalls-stands',
-    slug: 'exhibition-stalls-stands',
-    title: 'Exhibition Stalls & Stands',
-    shortDesc: 'Custom bespoke exhibition booths, modular trade show pavilions, display plinths, and integrated show lighting.',
-    fullDesc:
-      'Stand out on the expo floor with architecturally stunning exhibition stalls and custom-built stands. Our team delivers turnkey concept 3D rendering, German modular framework and wooden carpentry, integrated LED display walls, specialized spotlighting, experiential demo counters, and seamless on-site installation and dismantling.',
-    highlights: ['3D Booth Architecture & Fabrication', 'Turnkey On-Site Assembly & Dismantling', 'Integrated AV, Staging & Display Lighting'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    id: 'branding-solutions',
-    slug: 'branding-solutions',
-    title: 'Branding Solutions',
-    shortDesc: 'Corporate office identity, large-format wall graphics, frosted glass partitions, vehicle wraps, and 3D lobby logos.',
-    fullDesc:
-      'Transform physical environments into powerful brand experiences. We create cohesive visual identities across commercial offices, retail outlets, and event venues with large-format vinyl wall murals, architectural frosted glass graphics, 3D acrylic & brass reception logos, directional wayfinding, and durable commercial fleet wraps.',
-    highlights: ['Office & Lobby 3D Visual Identity', 'Large-Format Vinyl Murals & Fleet Wraps', 'Environmental Retail Graphics & Fabrication'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=80'
-  },
-  {
-    id: 'promotional-items-corporate-gifts',
-    slug: 'promotional-items-corporate-gifts',
-    title: 'Promotional Items & Corporate Gifts',
-    shortDesc: 'Premium customized corporate gift sets, executive welcome merchandise, tech accessories, and branded hampers.',
-    fullDesc:
-      'Strengthen relationships and make lasting impressions with premium bespoke corporate gifts and promotional merchandise. We specialize in custom-packaged executive welcome kits, laser-engraved tech gadgets, luxury stationery sets, sustainable eco-friendly giveaways, and branded apparel tailored with precision embossing, screen printing, and UV curing.',
-    highlights: ['Executive Welcome Kits & Hampers', 'Laser-Engraved Tech & Metal Accessories', 'Custom Packaging, Embossing & UV Print'],
-    imageUrl:
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80',
-    secondaryImageUrl:
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=80'
-  }
-];
+export { SERVICES_LIST } from './servicesData';
 
 export const PORTFOLIO_ITEMS = [
   {
@@ -147,3 +68,124 @@ export const PORTFOLIO_ITEMS = [
       'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80'
   }
 ];
+
+/**
+ * Centralized Home Page Unsplash Media Assets
+ * Pure, high-resolution photography covering Jackson Advertising's primary services:
+ * - LED Screen Supply & Installation
+ * - Signage Solutions
+ * - Kiosk Design & Installation
+ * - Exhibition Stalls & Stands
+ * - Branding Solutions
+ * - Promotional Items & Corporate Gifts
+ */
+export const HOME_HERO_BANNERS = [
+  {
+    _id: 'default-hero-1',
+    title: 'LED Screen Supply & Installation',
+    heading: 'Ultra-Crisp LED Video Walls for Live Stages & Summits',
+    description:
+      'Modular indoor and outdoor fine-pitch LED screens engineered for keynote clarity, concerts, brand launches, and immersive visual backdrops.',
+    mediaType: 'image',
+    imageUrl:
+      'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=85',
+    videoUrl: '',
+    displayOrder: 1,
+    button1Text: 'Call Us',
+    button2Text: 'Enquiry Now',
+    button1Enabled: true,
+    button2Enabled: true,
+    status: 'active'
+  },
+  {
+    _id: 'default-hero-2',
+    title: 'Signage Solutions',
+    heading: 'Turnkey Architectural & Commercial 3D Signage Systems',
+    description:
+      'Custom 3D LED channel letters, illuminated ACP pylons, architectural neon, and directional campus wayfinding built for day-and-night visibility.',
+    mediaType: 'image',
+    imageUrl:
+      'https://images.unsplash.com/photo-1572945550749-8859f39d6b2d?auto=format&fit=crop&w=1920&q=85',
+    videoUrl: '',
+    displayOrder: 2,
+    button1Text: 'Call Us',
+    button2Text: 'Enquiry Now',
+    button1Enabled: true,
+    button2Enabled: true,
+    status: 'active'
+  },
+  {
+    _id: 'default-hero-3',
+    title: 'Exhibition Stalls & Stands',
+    heading: 'Custom Exhibition Stalls & Brand Experience Pavilions',
+    description:
+      'Award-winning trade show booth fabrication, modular double-decker pavilions, and turnkey experiential exhibition spaces across India.',
+    mediaType: 'image',
+    imageUrl:
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=85',
+    videoUrl: '',
+    displayOrder: 3,
+    button1Text: 'Call Us',
+    button2Text: 'Enquiry Now',
+    button1Enabled: true,
+    button2Enabled: true,
+    status: 'active'
+  },
+  {
+    _id: 'default-hero-4',
+    title: 'Kiosk Design & Installation',
+    heading: 'Interactive Touchscreen Kiosks & Smart Digital Displays',
+    description:
+      'Turnkey digital wayfinding kiosks, customer self-service terminals, and customized metal/acrylic enclosures engineered for heavy public footfall.',
+    mediaType: 'image',
+    imageUrl:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=85',
+    videoUrl: '',
+    displayOrder: 4,
+    button1Text: 'Call Us',
+    button2Text: 'Enquiry Now',
+    button1Enabled: true,
+    button2Enabled: true,
+    status: 'active'
+  }
+];
+
+export const MISSION_MEDIA = {
+  primaryImage:
+    'https://images.unsplash.com/photo-1508997449629-303059a039c0?auto=format&fit=crop&w=1000&q=85',
+  primaryAlt: 'Large scale illuminated stage LED video wall and production engineering',
+  secondaryImage:
+    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=85',
+  secondaryAlt: 'Corporate architectural signage and 3D brand environment'
+};
+
+export const FAQ_MEDIA = {
+  image:
+    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80',
+  alt: 'Jackson Advertising technical production planners and engineers collaborating on site blueprints',
+  badge: '24/7 Technical Advisory',
+  title: 'Have a Custom Requirement?',
+  description:
+    'Our technical consultants and project directors are ready to assist with venue audits, structural drawings, and custom proposals.'
+};
+
+export const HOME_CONTACT_MEDIA = {
+  image:
+    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85',
+  alt: 'Live stage production, fine-pitch LED display wall and intelligent lighting setup',
+  badge: 'Turnkey Execution Across India',
+  title: 'End-to-End Advertising & AV Rigging',
+  description:
+    'From fabrication in our workshop to on-site installation, sound calibration, and live cue management.'
+};
+
+export const HOME_CTA_MEDIA = {
+  backgroundImage:
+    'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1920&q=85'
+};
+
+export const GET_STARTED_MEDIA = {
+  image:
+    'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
+  alt: 'Live conference stage production, modular exhibition booth and audio visual lighting setup'
+};

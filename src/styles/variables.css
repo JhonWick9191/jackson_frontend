@@ -1,35 +1,48 @@
 :root {
-  /* Brand Palette matching logo background #E5E5E5 and text #62615A */
-  --color-header-bg: #BABBFF;
-  --color-brand-ink: #62615A;
-  --color-brand-ink-dark: #3E3D38;
-  --color-charcoal: #1A1A18;
-  --color-obsidian: #111110;
-  --color-accent: #d17be2;
-  --color-accent-hover: #9C773B;
-  --color-accent-soft:#d17be2;
+  /* Brand Palette - Premium Dark Charcoal & Electric Orange */
+  --color-header-bg: #22252B;
+  --color-brand-ink: #C4C7CC;
+  --color-brand-ink-dark: #FFFFFF;
+  --color-charcoal: #FFFFFF;
+  --color-obsidian: #111111;
 
-  /* Surfaces & Text */
-  --color-bg-page: #F6F5F2;
-  --color-bg-surface: #FFFFFF;
-  --color-bg-muted: #ECEBE6;
-  --color-text-primary: #1F1F1C;
-  --color-text-secondary: #62615A;
-  --color-text-light: #F6F5F2;
-  --color-border: #DAD8D0;
-  --color-border-strong: #C4C2B8;
+  /* Accent: Electric Orange */
+  --color-accent: #F56A32;
+  --color-accent-hover: #E0561F;
+  --color-accent-light: #FF7B47;
+  --color-accent-soft: rgba(245, 106, 50, 0.16);
 
-  /* Semantic Status Colors */
-  --color-success: #1F7A4D;
-  --color-success-bg: #E7F5EE;
-  --color-warning: #A66A14;
-  --color-warning-bg: #FDF3E2;
-  --color-danger: #B83333;
-  --color-danger-bg: #FDECEC;
-  --color-info: #285E8C;
-  --color-info-bg: #EBF3FA;
+  /* Surfaces & Backgrounds */
+  --color-bg-page: #17191D;         /* Main Background: Deep Charcoal */
+  --color-bg-secondary: #22252B;    /* Secondary Background: Charcoal Grey */
+  --color-bg-alternate: #30343B;    /* Alternate Section Background: Slate Grey */
+  --color-bg-card: #272A30;         /* Card Background */
+  --color-bg-surface: #272A30;      /* Component surface / cards */
+  --color-bg-muted: #30343B;        /* Muted / Alternate */
+  --color-bg-deep: #111111;
 
   /* Typography */
+  --color-text-primary: #FFFFFF;    /* Primary Text: White */
+  --color-text-secondary: #C4C7CC;  /* Secondary Text: Light Grey */
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #8E939E;
+
+  /* Borders */
+  --color-border: #3A3D44;          /* Borders */
+  --color-border-strong: #4E525C;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+  /* Semantic Status Colors */
+  --color-success: #22C55E;
+  --color-success-bg: rgba(34, 197, 94, 0.15);
+  --color-warning: #F59E0B;
+  --color-warning-bg: rgba(245, 158, 11, 0.15);
+  --color-danger: #EF4444;
+  --color-danger-bg: rgba(239, 68, 68, 0.15);
+  --color-info: #3B82F6;
+  --color-info-bg: rgba(59, 130, 246, 0.15);
+
+  /* Typography Fonts */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
 
@@ -41,9 +54,9 @@
   --radius-pill: 999px;
 
   /* Elevation */
-  --shadow-sm: 0 2px 8px rgba(17, 17, 16, 0.06);
-  --shadow-md: 0 10px 30px rgba(17, 17, 16, 0.1);
-  --shadow-lg: 0 20px 50px rgba(17, 17, 16, 0.18);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
 
   /* Transitions */
   --transition-fast: 180ms ease;

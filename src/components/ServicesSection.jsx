@@ -24,7 +24,7 @@ export default function ServicesSection({ preview = false }) {
   };
 
   return (
-    <section className="section-padding services-section" aria-labelledby="services-heading">
+    <section className="section-padding services-section" id="services" aria-labelledby="services-heading">
       <div className="container">
         <div className="services-header-centered">
           <div className="services-pill">
@@ -101,19 +101,20 @@ export default function ServicesSection({ preview = false }) {
                     )}
 
                     <div className="service-action-row">
-                      {isSelected ? (
-                        <Link
-                          to="/contact"
-                          className="btn btn-primary service-enquiry-btn"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          Enquiry Now <ArrowRight size={14} aria-hidden="true" />
-                        </Link>
-                      ) : (
-                        <span className="service-showcase-explore">
-                          Click to View Details <ArrowRight size={14} aria-hidden="true" />
-                        </span>
-                      )}
+                      <Link
+                        to={`/services/${service.slug}`}
+                        className="btn btn-secondary service-view-detail-btn"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Explore Service <ArrowRight size={14} aria-hidden="true" />
+                      </Link>
+                      <Link
+                        to="/contact"
+                        className="btn btn-primary service-enquiry-btn"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Enquiry Now
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -138,8 +139,8 @@ export default function ServicesSection({ preview = false }) {
 
         {preview && (
           <div className="services-footer-cta">
-            <Link to="/services" className="btn btn-outline">
-              Explore All Services In Detail
+            <Link to="/contact" className="btn btn-outline">
+              Discuss Your Project With Us
             </Link>
           </div>
         )}

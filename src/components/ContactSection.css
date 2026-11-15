@@ -1,5 +1,6 @@
 .contact-section {
-  background-color: var(--color-bg-page);
+  background-color: #17191D;
+  padding: 5rem 0;
 }
 
 .contact-grid {
@@ -10,19 +11,21 @@
 }
 
 .contact-info-panel {
-  background-color: var(--color-header-bg);
-  border: 1px solid var(--color-border-strong);
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-lg);
   padding: 2.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .contact-info-panel h2 {
   font-size: 1.8rem;
+  color: #FFFFFF;
   margin-bottom: 0.75rem;
 }
 
 .contact-intro {
-  color: var(--color-brand-ink-dark);
+  color: #C4C7CC;
   margin-bottom: 1.75rem;
   font-size: 0.97rem;
 }
@@ -46,8 +49,9 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background-color: var(--color-charcoal);
-  color: #ffffff;
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
+  color: #F56A32;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -59,42 +63,51 @@
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-brand-ink);
+  color: #F56A32;
 }
 
 .contact-details-list a,
 .contact-details-list span {
   font-size: 0.96rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
+}
+
+.contact-details-list a:hover {
+  color: #F56A32;
 }
 
 .contact-whatsapp-btn {
   width: 100%;
-  background-color: #1f7a4d;
-  color: #ffffff;
+  background-color: #25D366;
+  border: 1px solid #25D366;
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
 }
 
 .contact-whatsapp-btn:hover {
-  background-color: #17603c;
-  color: #ffffff;
+  background-color: #1EBE5D;
+  border-color: #1EBE5D;
+  color: #FFFFFF;
 }
 
 .contact-form-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-lg);
   padding: 2.25rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
 }
 
 .contact-form-card h3 {
   font-size: 1.5rem;
+  color: #FFFFFF;
   margin-bottom: 0.35rem;
 }
 
 .contact-form-subtitle {
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   font-size: 0.94rem;
   margin-bottom: 1.5rem;
 }
@@ -104,8 +117,9 @@
   gap: 0.75rem;
   padding: 0.95rem 1rem;
   border-radius: var(--radius-sm);
-  background-color: var(--color-success-bg);
-  color: var(--color-success);
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
   margin-bottom: 1.25rem;
   font-size: 0.9rem;
 }
@@ -120,8 +134,9 @@
   gap: 0.6rem;
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
-  background-color: var(--color-danger-bg);
-  color: var(--color-danger);
+  background-color: rgba(220, 38, 38, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(220, 38, 38, 0.4);
   margin-bottom: 1.25rem;
   font-size: 0.9rem;
 }
@@ -147,7 +162,7 @@
 .contact-field label {
   font-size: 0.86rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .contact-field input,
@@ -155,19 +170,24 @@
 .contact-field textarea {
   width: 100%;
   padding: 0.72rem 0.85rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
-  color: var(--color-text-primary);
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: #22252B;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: rgba(196, 199, 204, 0.45);
 }
 
 .contact-field input:focus,
 .contact-field select:focus,
 .contact-field textarea:focus {
   outline: none;
-  border-color: var(--color-charcoal);
-  box-shadow: 0 0 0 3px rgba(98, 97, 90, 0.15);
+  border-color: #F56A32;
+  box-shadow: 0 0 0 3px rgba(245, 106, 50, 0.25);
 }
 
 .contact-field-error {
@@ -178,6 +198,20 @@
 .contact-submit-btn {
   align-self: flex-start;
   min-width: 180px;
+  background-color: #F56A32;
+  border: 1px solid #F56A32;
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(245, 106, 50, 0.35);
+  transition: all var(--transition-fast);
+}
+
+.contact-submit-btn:hover:not(:disabled) {
+  background-color: #E0561F;
+  border-color: #E0561F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 106, 50, 0.45);
 }
 
 @media (max-width: 960px) {

@@ -14,6 +14,7 @@ import FaqSection from '../components/FaqSection';
 import HomeContactSection from '../components/HomeContactSection';
 import HomeContactDetailsSection from '../components/HomeContactDetailsSection';
 import AboutSection from '../components/AboutSection';
+import { HOME_CTA_MEDIA } from '../data/siteContent';
 import './HomePage.css';
 
 export default function HomePage() {
@@ -53,7 +54,12 @@ export default function HomePage() {
 
       <AboutSection compact />
 
-      <section className="home-cta-band" aria-label="Book your event production">
+      <section
+        className="home-cta-band"
+        aria-label="Book your event production"
+        style={{ backgroundImage: `url(${HOME_CTA_MEDIA.backgroundImage})` }}
+      >
+        <div className="home-cta-overlay" aria-hidden="true" />
         <div className="container home-cta-inner">
           <div>
             <h2>Ready to Elevate Your Next Event?</h2>

@@ -1,5 +1,7 @@
 .get-started-section {
-  background-color: var(--color-bg-page);
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
+  border-bottom: 1px solid #3A3D44;
+  padding: 5rem 0;
 }
 
 .get-started-grid {
@@ -19,8 +21,9 @@
   height: 100%;
   border-radius: 14px;
   overflow: hidden;
-  background-color: var(--color-charcoal);
-  box-shadow: var(--shadow-sm);
+  background-color: #17191D;
+  border: 1px solid #3A3D44;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .get-started-image-frame img {
@@ -40,13 +43,13 @@
   letter-spacing: -0.14em;
   user-select: none;
   pointer-events: none;
-  filter: drop-shadow(0 6px 12px rgba(17, 17, 16, 0.2));
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
 
 .get-started-cta-card {
   position: relative;
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
   border-radius: 14px;
   padding: 3.5rem 2.25rem;
   display: flex;
@@ -55,7 +58,7 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .get-started-loop {
@@ -64,7 +67,8 @@
   right: 8%;
   width: 170px;
   height: 112px;
-  color: var(--color-header-bg);
+  color: #F56A32;
+  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -76,20 +80,20 @@
   gap: 0.45rem;
   padding: 0.28rem 0.85rem;
   border-radius: var(--radius-pill);
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #30343B;
+  border: 1px solid #3A3D44;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-brand-ink-dark);
+  color: #FFFFFF;
   margin-bottom: 1.15rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .get-started-pill-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--color-accent);
+  background-color: #F56A32; /* Electric Orange */
 }
 
 .get-started-heading {
@@ -100,7 +104,7 @@
   line-height: 1.08;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   max-width: 390px;
   margin-bottom: 1.65rem;
 }
@@ -108,21 +112,29 @@
 .get-started-btn {
   position: relative;
   z-index: 2;
-  background-color: var(--color-accent);
-  color: var(--color-charcoal);
-  border-radius: 6px;
-  padding: 0.72rem 1.45rem;
+  background-color: #F56A32; /* Electric Orange */
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  padding: 0.72rem 1.65rem;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
+  border: 1px solid #F56A32;
+  box-shadow: 0 4px 14px rgba(245, 106, 50, 0.35);
   transition: background-color 220ms ease, color 220ms ease, transform 220ms ease,
     box-shadow 220ms ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .get-started-btn:hover {
-  background-color: var(--color-charcoal);
-  color: #ffffff;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-sm);
+  background-color: #E0561F;
+  border-color: #E0561F;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 106, 50, 0.45);
 }
 
 @media (max-width: 960px) {

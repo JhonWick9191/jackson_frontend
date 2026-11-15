@@ -1,5 +1,5 @@
 .logo-carousel-section {
- 
+  background-color: #17191D;
   padding: 2.25rem 0 2.5rem;
 }
 
@@ -14,7 +14,7 @@
 .logo-carousel-caption {
   font-size: 0.84rem;
   font-weight: 500;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   letter-spacing: 0.01em;
   margin-bottom: 1.35rem;
 }
@@ -72,7 +72,8 @@
   width: auto;
   max-width: 150px;
   object-fit: contain;
-  opacity: 0.88;
+  filter: brightness(0) invert(1);
+  opacity: 0.75;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 

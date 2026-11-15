@@ -1,5 +1,7 @@
 .about-section {
-  background-color: var(--color-bg-page);
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
+  border-bottom: 1px solid #3A3D44;
+  padding: 5rem 0;
 }
 
 .about-grid {
@@ -11,12 +13,12 @@
 
 .about-lead {
   font-size: 1.06rem;
-  color: var(--color-text-primary);
+  color: #FFFFFF;
   margin-bottom: 0.9rem;
 }
 
 .about-body {
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   margin-bottom: 1.75rem;
 }
 
@@ -28,22 +30,23 @@
 }
 
 .about-metric-box {
-  background-color: var(--color-header-bg);
-  border: 1px solid var(--color-border-strong);
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-md);
-  padding: 1rem;
+  padding: 1.15rem 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .about-metric-box strong {
   display: block;
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  color: var(--color-charcoal);
+  font-size: 1.65rem;
+  color: #FFFFFF;
 }
 
 .about-metric-box span {
   font-size: 0.82rem;
-  color: var(--color-brand-ink-dark);
+  color: #C4C7CC;
   font-weight: 600;
 }
 
@@ -54,18 +57,19 @@
 }
 
 .about-pillar-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-md);
   padding: 1.35rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .about-pillar-icon {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background-color: var(--color-header-bg);
-  color: var(--color-charcoal);
+  background-color: #30343B;
+  color: #F56A32;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -74,12 +78,13 @@
 
 .about-pillar-card h3 {
   font-size: 1.04rem;
+  color: #FFFFFF;
   margin-bottom: 0.4rem;
 }
 
 .about-pillar-card p {
   font-size: 0.9rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 @media (max-width: 960px) {

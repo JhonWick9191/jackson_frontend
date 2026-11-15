@@ -1,7 +1,9 @@
 .pain-points-section {
-  background-color: #eff0f4;
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
   padding: 5rem 0 5.5rem;
   overflow: hidden;
+  border-top: 1px solid #3A3D44;
+  border-bottom: 1px solid #3A3D44;
 }
 
 .pain-points-section .container {
@@ -36,22 +38,22 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #30343B; /* Alternate Section / pill bg */
+  border: 1px solid #3A3D44;
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #2b2b28;
+  color: #FFFFFF;
   margin-bottom: 1.25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .pain-points-pill-dot {
   width: 6.5px;
   height: 6.5px;
   border-radius: 50%;
-  background-color: #e07fe6;
+  background-color: #F56A32; /* Electric Orange */
   display: inline-block;
 }
 
@@ -62,7 +64,7 @@
   line-height: 1.12;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  color: #1a1a18;
+  color: #FFFFFF; /* Primary Text: White */
   margin: 0;
 }
 
@@ -70,7 +72,7 @@
   font-family: var(--font-sans);
   font-size: 0.88rem;
   line-height: 1.6;
-  color: #62615a;
+  color: #C4C7CC; /* Secondary Text: Light Grey */
   margin: 0;
 }
 
@@ -92,6 +94,11 @@
   overflow: visible;
 }
 
+.pain-points-wave-svg path {
+  stroke: #F56A32; /* Electric Orange Accent */
+  stroke-opacity: 0.8;
+}
+
 .pain-points-grid {
   position: relative;
   z-index: 2;
@@ -109,16 +116,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
-  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease;
+  border: 1px solid #3A3D44;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.pain-point-card:hover {
+  border-color: #F56A32;
 }
 
 .pain-point-card--dark {
-  background-color: #2b2b2b;
+  background-color: #272A30; /* Card Background */
 }
 
 .pain-point-card--slate {
-  background-color: #5c5c5c;
+  background-color: #30343B; /* Slate Grey Card */
 }
 
 .pain-point-card-top {
@@ -131,12 +143,13 @@
 .pain-point-icon-box {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: #22252B;
+  border: 1px solid #3A3D44;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
 }
 
@@ -146,14 +159,15 @@
 }
 
 .pain-point-pill {
-  background-color: #ffffff;
+  background-color: #22252B;
+  border: 1px solid #3A3D44;
   border-radius: 999px;
   padding: 0.35rem 0.85rem;
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 600;
-  color: #242422;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
 }
 
@@ -163,7 +177,7 @@
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 1.65rem 0 0.85rem;
 }
 
@@ -171,7 +185,7 @@
   font-family: var(--font-sans);
   font-size: 0.84rem;
   line-height: 1.45;
-  color: rgba(255, 255, 255, 0.88);
+  color: #C4C7CC;
   margin: 0;
 }
 
@@ -195,22 +209,22 @@
 
   .pain-point-card--0:hover {
     transform: rotate(-2deg) translateY(-14px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.55);
   }
 
   .pain-point-card--1:hover {
     transform: rotate(0deg) translateY(10px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.55);
   }
 
   .pain-point-card--2:hover {
     transform: rotate(-1deg) translateY(-16px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.55);
   }
 
   .pain-point-card--3:hover {
     transform: rotate(1deg) translateY(10px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.55);
   }
 }
 

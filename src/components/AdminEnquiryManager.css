@@ -10,14 +10,15 @@
   gap: 0.35rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-brand-ink-dark);
+  color: #C4C7CC;
 }
 
 .year-picker-wrap select {
   padding: 0.45rem 0.75rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
-  background-color: #ffffff;
+  background-color: #22252B;
+  color: #FFFFFF;
   font-weight: 600;
 }
 
@@ -29,11 +30,12 @@
 }
 
 .stat-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
-  border-top: 3px solid var(--color-charcoal);
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
+  border-top: 3px solid #F56A32;
   border-radius: var(--radius-md);
   padding: 1.05rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .stat-card--interested {
@@ -45,7 +47,7 @@
 }
 
 .stat-card--not-interested {
-  border-top-color: var(--color-info);
+  border-top-color: #94a3b8;
 }
 
 .stat-card--deleted {
@@ -56,14 +58,14 @@
   display: block;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   margin-bottom: 0.35rem;
 }
 
 .stat-value {
   font-family: var(--font-heading);
   font-size: 1.7rem;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .analytics-grid {
@@ -75,22 +77,24 @@
 
 .monthly-chart-wrap,
 .source-breakdown-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-md);
   padding: 1.35rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .monthly-chart-header h3,
 .source-breakdown-card h3 {
   font-size: 1.1rem;
+  color: #FFFFFF;
   margin-bottom: 0.2rem;
 }
 
 .monthly-chart-header p,
 .source-breakdown-card p {
   font-size: 0.85rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   margin-bottom: 0.9rem;
 }
 
@@ -101,26 +105,26 @@
 }
 
 .chart-grid-line {
-  stroke: #e5e3db;
+  stroke: #3A3D44;
   stroke-width: 1;
 }
 
 .chart-axis-text {
-  fill: #62615a;
+  fill: #C4C7CC;
   font-size: 11px;
   font-weight: 600;
 }
 
 .chart-bar {
-  fill: #dad8d0;
+  fill: #3A3D44;
 }
 
 .chart-bar--active {
-  fill: var(--color-charcoal);
+  fill: #F56A32;
 }
 
 .chart-value-label {
-  fill: #1f1f1c;
+  fill: #FFFFFF;
   font-size: 11px;
   font-weight: 700;
 }
@@ -140,29 +144,30 @@
   justify-content: space-between;
   padding: 0.55rem 0.75rem;
   border-radius: var(--radius-sm);
-  background-color: var(--color-bg-page);
-  border: 1px solid var(--color-border);
+  background-color: #22252B;
+  border: 1px solid #3A3D44;
 }
 
 .source-name {
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .source-count {
   font-size: 0.92rem;
-  color: var(--color-accent-hover);
+  color: #F56A32;
+  font-weight: 700;
 }
 
 .source-empty-note {
   font-size: 0.88rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .enquiry-filters-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-md);
   padding: 1rem 1.15rem;
   margin-bottom: 1.25rem;
@@ -191,14 +196,16 @@
 .search-input-wrap svg {
   position: absolute;
   left: 0.75rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .search-input-wrap input {
   width: 100%;
   padding: 0.55rem 0.8rem 0.55rem 2.25rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
+  background-color: #22252B;
+  color: #FFFFFF;
   font-size: 0.9rem;
 }
 
@@ -218,13 +225,15 @@
 .filter-control label {
   font-size: 0.76rem;
   font-weight: 600;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .filter-control input {
   padding: 0.48rem 0.65rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
+  background-color: #22252B;
+  color: #FFFFFF;
   font-size: 0.85rem;
 }
 
@@ -237,32 +246,35 @@
 
 .enquiry-tab-btn {
   padding: 0.6rem 1.1rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-border-strong);
-  background-color: var(--color-bg-surface);
-  color: var(--color-brand-ink-dark);
+  border-radius: var(--radius-pill);
+  border: 1px solid #3A3D44;
+  background-color: #272A30;
+  color: #C4C7CC;
   font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .enquiry-tab-btn:hover {
-  background-color: var(--color-header-bg);
+  background-color: #30343B;
+  border-color: #F56A32;
+  color: #FFFFFF;
 }
 
 .enquiry-tab-btn--active {
-  background-color: var(--color-charcoal);
-  border-color: var(--color-charcoal);
-  color: #ffffff;
+  background-color: #F56A32 !important;
+  border-color: #F56A32 !important;
+  color: #FFFFFF !important;
 }
 
 .banner-source-tag {
   display: inline-block;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background-color: var(--color-header-bg);
-  color: var(--color-charcoal);
+  background-color: #30343B;
+  border: 1px solid #3A3D44;
+  color: #FFFFFF;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -276,38 +288,43 @@
 }
 
 .status-pill--new {
-  background-color: var(--color-info-bg);
-  color: var(--color-info);
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.4);
 }
 
 .status-pill--interested {
-  background-color: var(--color-success-bg);
-  color: var(--color-success);
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
 }
 
 .status-pill--not-interested {
-  background-color: var(--color-bg-muted);
-  color: var(--color-brand-ink-dark);
+  background-color: #30343B;
+  color: #C4C7CC;
+  border: 1px solid #3A3D44;
 }
 
 .status-pill--convertible {
-  background-color: var(--color-warning-bg);
-  color: var(--color-warning);
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
 }
 
 .status-pill--deleted {
-  background-color: var(--color-danger-bg);
-  color: var(--color-danger);
+  background-color: rgba(220, 38, 38, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(220, 38, 38, 0.4);
 }
 
 .enquiry-action-select {
   padding: 0.42rem 0.65rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
-  background-color: #ffffff;
+  background-color: #22252B;
   font-size: 0.84rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -321,7 +338,7 @@
 
 .pagination-summary {
   font-size: 0.86rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .pagination-controls {

@@ -1,5 +1,7 @@
 .faq-section {
-  background-color: var(--color-bg-page);
+  background-color: #22252B; /* Secondary Background: Charcoal Grey */
+  border-bottom: 1px solid #3A3D44;
+  padding: 5rem 0;
 }
 
 .faq-layout {
@@ -20,20 +22,20 @@
   gap: 0.45rem;
   padding: 0.28rem 0.85rem;
   border-radius: var(--radius-pill);
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
+  background-color: #30343B;
+  border: 1px solid #3A3D44;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-brand-ink-dark);
+  color: #FFFFFF;
   margin-bottom: 1.05rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .faq-pill-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: #f4baff;
+  background-color: #F56A32; /* Electric Orange */
 }
 
 .faq-heading {
@@ -43,8 +45,110 @@
   line-height: 1.03;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  color: var(--color-charcoal);
-  margin: 0;
+  color: #FFFFFF;
+  margin: 0 0 1.75rem;
+}
+
+/* ==========================================================================
+   FAQ VISUAL CONSULTATION CARD (BALANCES EMPTY LEFT COLUMN)
+   ========================================================================== */
+.faq-consult-card {
+  background-color: #272A30;
+  border: 1px solid #3A3D44;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  max-width: 380px;
+}
+
+.faq-consult-card:hover {
+  border-color: #F56A32;
+  transform: translateY(-2px);
+}
+
+.faq-consult-image-frame {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background-color: #17191D;
+}
+
+.faq-consult-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 380ms ease;
+}
+
+.faq-consult-card:hover .faq-consult-image-frame img {
+  transform: scale(1.04);
+}
+
+.faq-consult-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(23, 25, 29, 0.8) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.75rem 1rem;
+}
+
+.faq-consult-badge {
+  background-color: rgba(245, 106, 50, 0.9);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.faq-consult-body {
+  padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.faq-consult-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 0.45rem;
+  line-height: 1.25;
+}
+
+.faq-consult-text {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #C4C7CC;
+  margin: 0 0 0.95rem;
+}
+
+.faq-consult-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #F56A32;
+  text-decoration: none;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.faq-consult-link:hover {
+  color: #E0561F;
+  transform: translateX(2px);
+}
+
+@media (max-width: 960px) {
+  .faq-consult-card {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
 }
 
 .faq-list {
@@ -54,7 +158,7 @@
 }
 
 .faq-item {
-  border-bottom: 1px solid rgba(218, 216, 208, 0.55);
+  border-bottom: 1px solid #3A3D44;
   padding-bottom: 1.15rem;
 }
 
@@ -79,17 +183,18 @@
 .faq-question-bubble {
   position: relative;
   display: inline-block;
-  background-color: #f4baff;
-  color: var(--color-charcoal);
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
+  color: #FFFFFF;
   font-family: var(--font-heading);
   font-size: clamp(0.95rem, 1.35vw, 1.14rem);
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  padding: 0.62rem 1.05rem;
-  border-radius: 6px 6px 6px 2px;
-  transition: background-color 200ms ease, transform 200ms ease;
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px 8px 8px 2px;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
 .faq-question-bubble::after {
@@ -105,19 +210,21 @@
 
 .faq-trigger:hover .faq-question-bubble,
 .faq-trigger:focus-visible .faq-question-bubble {
-  background-color: #ebb0f8;
+  background-color: #30343B;
+  border-color: #F56A32;
+  color: #F56A32;
   transform: translateY(-1px);
 }
 
 .faq-trigger:focus-visible {
-  outline: 2px solid var(--color-charcoal);
-  outline-offset: 6px;
+  outline: 2px solid #F56A32;
+  outline-offset: 4px;
   border-radius: 8px;
 }
 
 .faq-arrow-icon {
   flex-shrink: 0;
-  color: var(--color-charcoal);
+  color: #F56A32; /* Electric Orange */
   transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -139,7 +246,7 @@
 
 .faq-answer-inner {
   overflow: hidden;
-  padding-top: 0.45rem;
+  padding-top: 0.75rem;
   padding-left: 0.35rem;
   padding-right: 2rem;
 }
@@ -148,14 +255,14 @@
   margin: 0 0 0.65rem;
   font-size: 0.94rem;
   line-height: 1.65;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .faq-contact-link {
   display: inline-block;
   font-size: 0.86rem;
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: #F56A32;
   text-decoration: underline;
   text-underline-offset: 3px;
   margin-bottom: 0.35rem;
@@ -163,7 +270,7 @@
 }
 
 .faq-contact-link:hover {
-  color: var(--color-brand-ink);
+  color: #E0561F;
 }
 
 @media (max-width: 960px) {

@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
+import { GET_STARTED_MEDIA } from '../data/siteContent';
 import './GetStartedSection.css';
-
-const EVENT_STAGE_IMAGE =
-  'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85';
 
 export default function GetStartedSection() {
   return (
@@ -15,8 +13,8 @@ export default function GetStartedSection() {
         <div className="get-started-media-card">
           <div className="get-started-image-frame">
             <img
-              src={EVENT_STAGE_IMAGE}
-              alt="Live conference stage production and audio visual lighting setup"
+              src={GET_STARTED_MEDIA.image}
+              alt={GET_STARTED_MEDIA.alt}
               loading="lazy"
               width="720"
               height="520"

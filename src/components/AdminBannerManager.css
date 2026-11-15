@@ -8,12 +8,13 @@
 
 .admin-section-toolbar h2 {
   font-size: 1.45rem;
+  color: #FFFFFF;
   margin-bottom: 0.25rem;
 }
 
 .admin-section-toolbar p {
   font-size: 0.92rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .admin-banner-alert {
@@ -27,22 +28,25 @@
 }
 
 .admin-banner-alert--success {
-  background-color: var(--color-success-bg);
-  color: var(--color-success);
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
 }
 
 .admin-banner-alert--error {
-  background-color: var(--color-danger-bg);
-  color: var(--color-danger);
+  background-color: rgba(220, 38, 38, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(220, 38, 38, 0.4);
 }
 
 .banner-editor-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border-strong);
+  background-color: #272A30; /* Card Background */
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-md);
   padding: 1.5rem;
   margin-bottom: 1.75rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  color: #FFFFFF;
 }
 
 .banner-editor-header {
@@ -56,13 +60,19 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background-color: var(--color-bg-page);
-  color: var(--color-charcoal);
+  border: 1px solid #3A3D44;
+  background-color: #22252B;
+  color: #FFFFFF;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.banner-editor-close:hover {
+  background-color: #F56A32;
+  border-color: #F56A32;
 }
 
 .banner-form-grid {
@@ -84,17 +94,18 @@
 .banner-form-field label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .banner-form-field input,
 .banner-form-field select,
 .banner-form-field textarea {
   padding: 0.65rem 0.8rem;
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid #3A3D44;
   border-radius: var(--radius-sm);
   font-size: 0.93rem;
-  background-color: #ffffff;
+  background-color: #22252B;
+  color: #FFFFFF;
 }
 
 .banner-checkbox-row {
@@ -105,6 +116,7 @@
   font-size: 0.84rem;
   font-weight: 500;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 .banner-editor-actions {
@@ -123,6 +135,7 @@
 .order-badge {
   font-weight: 700;
   font-size: 0.9rem;
+  color: #FFFFFF;
 }
 
 .order-step-btns {
@@ -135,9 +148,9 @@
   width: 24px;
   height: 22px;
   border-radius: 4px;
-  border: 1px solid var(--color-border-strong);
-  background-color: var(--color-bg-page);
-  color: var(--color-charcoal);
+  border: 1px solid #3A3D44;
+  background-color: #22252B;
+  color: #FFFFFF;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -154,11 +167,12 @@
   height: 48px;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background-color: var(--color-bg-muted);
+  background-color: #17191D;
+  border: 1px solid #3A3D44;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-brand-ink);
+  color: #C4C7CC;
 }
 
 .banner-thumb-box img {
@@ -170,12 +184,13 @@
 .banner-row-title {
   display: block;
   font-size: 0.95rem;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
+  font-weight: 600;
 }
 
 .banner-row-heading {
   font-size: 0.83rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
   max-width: 280px;
 }
 
@@ -185,10 +200,11 @@
   gap: 0.35rem;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background-color: var(--color-header-bg);
+  background-color: #30343B;
+  border: 1px solid #3A3D44;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .banner-buttons-summary {
@@ -196,7 +212,7 @@
   flex-direction: column;
   gap: 0.2rem;
   font-size: 0.8rem;
-  color: var(--color-text-secondary);
+  color: #C4C7CC;
 }
 
 .status-toggle-pill {
@@ -209,13 +225,15 @@
 }
 
 .status-toggle-pill--active {
-  background-color: var(--color-success-bg);
-  color: var(--color-success);
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
 }
 
 .status-toggle-pill--inactive {
-  background-color: var(--color-bg-muted);
-  color: var(--color-brand-ink-dark);
+  background-color: #30343B;
+  color: #C4C7CC;
+  border: 1px solid #3A3D44;
 }
 
 .row-actions-group {

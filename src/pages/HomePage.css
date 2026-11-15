@@ -1,11 +1,31 @@
 .home-cta-band {
-  background-color: var(--color-charcoal);
-  color: #ffffff;
-  padding: 3.5rem 0;
-  border-top: 3px solid var(--color-accent);
+  position: relative;
+  background-color: #111111;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 4.5rem 0;
+  border-top: 3px solid #F56A32;
+  overflow: hidden;
+}
+
+.home-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 19, 23, 0.94) 0%,
+    rgba(23, 25, 29, 0.88) 50%,
+    rgba(23, 25, 29, 0.95) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
 }
 
 .home-cta-inner {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,13 +33,13 @@
 }
 
 .home-cta-inner h2 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: clamp(1.5rem, 3vw, 2.1rem);
   margin-bottom: 0.4rem;
 }
 
 .home-cta-inner p {
-  color: #d1cfc7;
+  color: #C4C7CC;
   max-width: 600px;
 }
 

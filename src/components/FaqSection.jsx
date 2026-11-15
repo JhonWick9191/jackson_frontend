@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, MessageSquare } from 'lucide-react';
 import { faqData } from '../data/faqData';
+import { FAQ_MEDIA } from '../data/siteContent';
 import './FaqSection.css';
 
 export default function FaqSection() {
@@ -25,6 +26,29 @@ export default function FaqSection() {
               <br />
               QUESTIONS
             </h2>
+
+            <div className="faq-consult-card">
+              <div className="faq-consult-image-frame">
+                <img
+                  src={FAQ_MEDIA.image}
+                  alt={FAQ_MEDIA.alt}
+                  loading="lazy"
+                  width="360"
+                  height="210"
+                />
+                <div className="faq-consult-overlay">
+                  <span className="faq-consult-badge">{FAQ_MEDIA.badge}</span>
+                </div>
+              </div>
+              <div className="faq-consult-body">
+                <h3 className="faq-consult-title">{FAQ_MEDIA.title}</h3>
+                <p className="faq-consult-text">{FAQ_MEDIA.description}</p>
+                <Link to="/contact" className="faq-consult-link">
+                  <MessageSquare size={14} aria-hidden="true" />
+                  <span>Talk to Our Production Team</span>
+                </Link>
+              </div>
+            </div>
           </div>
 
           <div className="faq-list">

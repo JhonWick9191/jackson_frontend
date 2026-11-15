@@ -2,15 +2,16 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Phone, MessageSquare, RefreshCw } from 'lucide-react';
 import { bannerApi } from '../services/api';
+import { HOME_HERO_BANNERS } from '../data/siteContent';
 import BannerEnquiryModal from './BannerEnquiryModal';
 import './BannerSlider.css';
 
 const AUTO_SLIDE_INTERVAL_MS = 6000;
 
 export default function BannerSlider() {
-  const [banners, setBanners] = useState([]);
+  const [banners, setBanners] = useState(HOME_HERO_BANNERS);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [isPaused, setIsPaused] = useState(false);
   const [modalState, setModalState] = useState({
@@ -20,15 +21,16 @@ export default function BannerSlider() {
   });
 
   const loadBanners = useCallback(async () => {
-    setLoading(true);
-    setError('');
     try {
       const data = await bannerApi.getActive();
-      const list = Array.isArray(data.banners) ? data.banners : [];
+      const list = Array.isArray(data?.banners) && data.banners.length > 0 ? data.banners : HOME_HERO_BANNERS;
       setBanners(list);
       setActiveIndex(0);
+      setError('');
     } catch {
-      setError('Unable to load showcase banners at the moment.');
+      // Gracefully fall back to centralized showcase banners instead of showing an empty box
+      setBanners(HOME_HERO_BANNERS);
+      setError('');
     } finally {
       setLoading(false);
     }
@@ -148,7 +150,7 @@ export default function BannerSlider() {
 
             return (
               <div
-                key={banner._id}
+                key={banner._id || banner.id || index}
                 className={`hero-slide ${isActive ? 'hero-slide--active' : ''}`}
                 aria-hidden={!isActive}
               >

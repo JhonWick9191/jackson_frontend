@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AlertCircle, CheckCircle2, Loader2 } from 'lucide-react';
-import { COMPANY_INFO } from '../data/siteContent';
+import { COMPANY_INFO, HOME_CONTACT_MEDIA } from '../data/siteContent';
 import { contactApi } from '../services/api';
 import './HomeContactSection.css';
 
@@ -107,7 +107,27 @@ export default function HomeContactSection() {
               </p>
             </div>
 
-          
+            <div className="home-contact-showcase">
+              <div className="home-contact-image-frame">
+                <img
+                  src={HOME_CONTACT_MEDIA.image}
+                  alt={HOME_CONTACT_MEDIA.alt}
+                  loading="lazy"
+                  width="480"
+                  height="260"
+                />
+                <div className="home-contact-image-overlay">
+                  <span className="home-contact-image-badge">
+                    <span className="home-contact-image-badge-dot" aria-hidden="true" />
+                    <span>{HOME_CONTACT_MEDIA.badge}</span>
+                  </span>
+                </div>
+              </div>
+              <div className="home-contact-showcase-caption">
+                <strong>{HOME_CONTACT_MEDIA.title}</strong>
+                <p>{HOME_CONTACT_MEDIA.description}</p>
+              </div>
+            </div>
           </div>
 
           <div className="home-contact-card-wrap">

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { MISSION_MEDIA } from '../data/siteContent';
 import './OurMissionSection.css';
 
 const MISSION_STATS = [
@@ -31,11 +32,6 @@ const MISSION_STATS = [
     badgeVariant: 'secondary'
   }
 ];
-
-const MISSION_IMAGE_1 =
-  'https://pub-60262726c6594670a8cb8e295fb9b6a4.r2.dev/pexels-luka-franzi-1256113832-40735374.jpg';
-const MISSION_IMAGE_2 =
-  'https://pub-60262726c6594670a8cb8e295fb9b6a4.r2.dev/pexels-aysin-15564467.jpg';
 
 const ANIMATION_DURATION_MS = 1400;
 
@@ -162,8 +158,8 @@ export default function OurMissionSection() {
 
             <div className="mission-photo-frame mission-photo-frame--primary">
               <img
-                src={MISSION_IMAGE_1}
-                alt="Live event lighting and stage production atmosphere"
+                src={MISSION_MEDIA.primaryImage}
+                alt={MISSION_MEDIA.primaryAlt}
                 loading="lazy"
                 width="460"
                 height="480"
@@ -172,8 +168,8 @@ export default function OurMissionSection() {
 
             <div className="mission-photo-frame mission-photo-frame--secondary">
               <img
-                src={MISSION_IMAGE_2}
-                alt="Audience and AV visual experience at a live production"
+                src={MISSION_MEDIA.secondaryImage}
+                alt={MISSION_MEDIA.secondaryAlt}
                 loading="lazy"
                 width="260"
                 height="240"
